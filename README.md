@@ -19,10 +19,10 @@ ATTiny85も含めたATTinyマイコンへプログラムを書きこむ場合、
 * インターネットに接続されているパソコン（Windows、Mac、Linux）
 * Arduino
 * Arduinoとパソコン間配線材
- * USBケーブル
+  * USBケーブル
 * ArduinoとATTiny間配線材
- * ブレッドボード
- * ジャンパケーブル
+  * ブレッドボード
+  * ジャンパケーブル
 
 [書き込み可能な環境を構築するにはSETUP.mdを参照](./SETUP.md)
 
