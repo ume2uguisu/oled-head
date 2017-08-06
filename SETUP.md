@@ -1,23 +1,7 @@
 # 環境構築
+ここではATTiny85への書き込みをするための、Arduino開発環境の準備を説明します。
 
-ArduinoIDEインストール
-Arduino動作確認
-ATTiny用ライブラリ類インストール
-
-1.File -> Preferences, enter the above URL in "Additional Board Manager URLs"
-2.Tools -> Boards -> Board Manager... *If using 1.6.6, close board manager and re-open it (see below)
-3.Select ATtinyCore (Universal) and click "Install".
-
-
-http://drazzy.com/package_drazzy.com_index.json
-https://github.com/SpenceKonde/ATTinyCore
-
-ArduinoISP
-
-Arduinoと
-
-
-
+## ArduinoIDEインストール
 次のURLからパソコンにArduinoIDEをインストールします。
 
 ArduinoIDE
@@ -26,26 +10,33 @@ https://www.arduino.cc/en/Main/Software
 ※Download the Arduino IDE 
 Windows版が複数ありますが、特にこだわりが無ければ“Windows Installer”でOKと思います。
 
+## ATTiny用ライブラリ類インストール
+Arduinoが使用可能であることを確認できたら、ATTiny85を利用するための3つのライブラリ類をインストールします。
+
+* ATTinyCore(ATTinyマイコンをArduinoIDEで開発するためのハードウェア定義とライブラリ)
+* TinyWireM(ATTinyマイコン用I2C通信ライブラリ)
+* SSD1306_minimal(ATTinyマイコン用SSD1306ディスプレイドライバー)
+
+### ATTinyCore
+1. ArduinoIDEの環境設定⇒追加のボードマネージャーのURLに下記URLを記述し、OKを押す。
+http://drazzy.com/package_drazzy.com_index.json
+
+2. ArduinoIDEのツール⇒ボード⇒ボードマネージャを選択
+
+3. ボードマネージャの検索フィルタに「ATTinyCore」と入力し、「ATTinyCore by Spence Konde」をインストールする。
+
+### TinyWireM
+1. ArduinoIDEのスケッチ⇒ライブラリをインクルード⇒ライブラリを管理を選択
+
+2. ライブラリマネージャの検索フィルタに「TinyWireM」と入力し、「TinyWireM by Adafruit」をインストールする。
+
+### SSD1306_minimal
+1. 下記Webサイトにアクセスし、「Clone or download」をクリックし「Download ZIP」をクリックする。
+https://github.com/kirknorthrop/SSD1306_minimal
+
+2. ArduinoIDEのスケッチ⇒ライブラリをインクルード⇒.ZIP形式のライブラリをインストールを選択
+
+3. 1.でダウンロードしたZIP形式のファイルを選択
+
+
  
-
-
-ATTiny85に画像を表示する為には、次のことが出来る必要があります。
-
-・手持ちのパソコンでArduino開発が出来る
-・ArduinoとATTiny85を結線する事が出来る
-
-ArduinoIDE
-https://www.arduino.cc/en/Main/Software
-
-
-Arduino
-https://www.arduino.cc/
-
-OLED
-https://learn.adafruit.com/monochrome-oled-breakouts/downloads
-
-
-画像の作成方法
-0.96インチOLEDディスプレイは
-
-横128縦64ビットの2値化したビットマップを用意する。
