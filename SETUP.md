@@ -1,32 +1,4 @@
-## はじめに
-ここではArduinoを使用してATTiny85へプログラムを書きこむ説明をします。
-
-作業の流れは大きく
-
-環境構築
-画像作成
-プログラミング
-
-ATTiny85への書込み
-
-必要なもの
-
-インターネットにつながっているパソコン（WindowsでもMacでも）
-
-ATTinyにプログラムを書き込むのに必要なもの
-Arduino
-
-PCとArduinoを接続するのに必要なもの
-
-ArduinoとATTiny85を接続するのに必要なもの
-ブレッドボード
-ジャンパケーブル
-
-流れの説明
-※それぞれの詳細は後述します。
-
-
-環境構築
+# 環境構築
 
 ArduinoIDEインストール
 Arduino動作確認
@@ -37,8 +9,7 @@ ATTiny用ライブラリ類インストール
 3.Select ATtinyCore (Universal) and click "Install".
 
 
- http://drazzy.com/package_drazzy.com_index.json
-
+http://drazzy.com/package_drazzy.com_index.json
 https://github.com/SpenceKonde/ATTinyCore
 
 ArduinoISP
